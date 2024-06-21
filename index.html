@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Hub User's Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero">
+        <h1>Get the Data of GitHub users</h1>
+        <p>You can find data by username.</p>
+        <label for="username">Enter Username</label>
+        <input type="text" id="username" name="username">
+        <button onclick="fetchGitHubUserDetails()">Fetch Data</button>
+        <p id="error"></p>
+    </div>
+
+    <div class="data">
+        <table class="userDataTable">
+            <tr>
+                <th>Field</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td id="Username"></td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td id="Name"></td>
+            </tr>
+            <tr>
+                <td>User Id</td>
+                <td id="UserId"></td>
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td id="Company"></td>
+            </tr>
+            <tr>
+                <td>Followers</td>
+                <td id="Followers"></td>
+            </tr>
+            <tr>
+                <td>Following</td>
+                <td id="Following"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
